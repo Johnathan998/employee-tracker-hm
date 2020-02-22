@@ -114,4 +114,22 @@ function chooseView() {
         });
 };
 
+function updateEmployee() {
+    //come back to this after other functions are finished
+};
+function addDepartment() {
+    //add department function
+};
+function addRole() {
+    //add role function
+};
+function viewDepartments() {
+    //view departments function
+};
+function viewEmployees() {
+    //view employee function
+};
+function viewRoles() {
+    //view roles function
+};
 
