@@ -63,15 +63,15 @@ function chooseAdd() {
         .then(function (answer) {
             switch (answer.action) {
                 case "DEPARTMENT":
-                    chooseAdd();
+                    addDepartment();
                     break;
 
                 case "EMPLOYEE":
-                    chooseView();
+                    addEmployee();
                     break;
 
                 case "ROLE":
-                    updateEmployee();
+                    addRole();
                     break;
 
                 case "EXIT":
@@ -80,4 +80,38 @@ function chooseAdd() {
             }
         });
 };
+function chooseView() {
+    inquirer
+        .prompt({
+            name: "action",
+            type: "list",
+            message: "What would you like to view?",
+            choices: [
+                "DEPARTMENTS",
+                "EMPLOYEES",
+                "ROLES",
+                "EXIT"
+            ]
+        })
+        .then(function (answer) {
+            switch (answer.action) {
+                case "DEPARTMENTS":
+                    viewDepartments();
+                    break;
+
+                case "EMPLOYEES":
+                    viewEmployees();
+                    break;
+
+                case "ROLES":
+                    viewRoles();
+                    break;
+
+                case "EXITS":
+                    connection.end();
+                    break;
+            }
+        });
+};
+
 
