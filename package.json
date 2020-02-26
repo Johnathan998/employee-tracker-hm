@@ -1,0 +1,25 @@
+{
+  "name": "employee-tracker-hm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "employeeTracker.js",
+  "dependencies": {
+    "mysql": "^2.18.1",
+    "inquirer": "^7.0.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Johnathan998/employee-tracker-hm.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Johnathan998/employee-tracker-hm/issues"
+  },
+  "homepage": "https://github.com/Johnathan998/employee-tracker-hm#readme"
+}
